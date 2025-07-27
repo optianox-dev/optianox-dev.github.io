@@ -1,61 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Optianox – Expertise. Discrétion. Résultats." />
   <title>Optianox</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
-    header { background: #111; color: white; padding: 20px 40px; text-align: center; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; }
-    .section-title { font-size: 28px; margin-bottom: 20px; }
-    .card { background: white; padding: 20px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-    footer { background: #222; color: #aaa; text-align: center; padding: 20px; font-size: 14px; }
+    :root {
+      --bg: #f9f9f9;
+      --primary: #0a0a0a;
+      --accent: #1155cc;
+      --gray: #666;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: var(--gray);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      background: linear-gradient(135deg, #e9efff, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--gray);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f1f1f1;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
     @media (max-width: 600px) {
-      nav a { display: block; margin: 10px 0; }
+      .hero h1 { font-size: 2rem; }
+      nav { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <div><strong>Optianox</strong></div>
+      <div>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<header>
-  <h1>Optianox</h1>
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section id="about">
-  <h2 class="section-title">À propos</h2>
-  <div class="card">
-    <p>Optianox est un espace numérique confidentiel, conçu pour expérimenter, prototyper et construire des solutions digitales robustes.</p>
+  <div class="hero">
+    <h1>Optianox</h1>
+    <p>Expertise. Discrétion. Résultats.</p>
   </div>
-</section>
 
-<section id="services">
-  <h2 class="section-title">Nos services</h2>
-  <div class="card">
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Optianox est une structure indépendante dédiée à la gestion de projets sensibles et à la valorisation stratégique de l’information. Notre force : combiner rigueur, confidentialité et exécution.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
     <ul>
-      <li>Conception et hébergement de prototypes web</li>
-      <li>Outils de productivité personnalisés</li>
-      <li>Expérimentation IA & automatisation</li>
+      <li>Conseil stratégique et opérationnel</li>
+      <li>Veille et analyse documentaire</li>
+      <li>Support confidentiel & assistance projets</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section id="contact">
-  <h2 class="section-title">Contact</h2>
-  <div class="card">
-    <p>Pour toute question ou demande : <a href="mailto:contact@optianox.com">contact@optianox.com</a></p>
-  </div>
-</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Vous pouvez nous contacter à l’adresse suivante : <strong>contact[at]optianox.com</strong></p>
+  </section>
 
-<footer>
-  &copy; 2025 Optianox. Tous droits réservés.
-</footer>
-
+  <footer>
+    &copy; 2025 Optianox. Aucun cookie. Aucun tracking.
+  </footer>
 </body>
 </html>
