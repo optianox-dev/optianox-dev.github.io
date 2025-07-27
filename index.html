@@ -1,168 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Optianox – Conseil en digitalisation pour la finance" />
-  <title>Optianox – Conseil en digitalisation pour la finance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optianox</title>
   <style>
-    :root {
-      --primary: #0a0a0a;
-      --accent: #0051a2;
-      --bg: #ffffff;
-      --gray: #666;
-      --font: 'Segoe UI', sans-serif;
-    }
-
     body {
-      <header style="text-align:center; margin-top: 30px;">
-  <img src="optianox_logo.png" alt="Logo Optianox" style="height: 60px;">
-</header>
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       margin: 0;
-      font-family: var(--font);
-      background: var(--bg);
-      color: var(--primary);
-      line-height: 1.6;
+      padding: 0;
+      background-color: #f4f6fa;
+      color: #333;
     }
 
     header {
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: auto;
-      padding: 1rem;
-    }
-
-    nav a {
-      margin-left: 1rem;
-      text-decoration: none;
-      color: var(--gray);
-      font-weight: 500;
-    }
-
-    .hero {
       text-align: center;
-      padding: 5rem 1rem;
-      background: #f0f4fa;
+      padding: 40px 20px 20px;
+      background-color: #f4f6fa;
     }
 
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: var(--gray);
+    header img {
+      max-width: 240px;
+      height: auto;
     }
 
     section {
-      max-width: 900px;
-      margin: 4rem auto;
-      padding: 0 1rem;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-    section h2 {
-      font-size: 1.8rem;
-      color: var(--accent);
-      margin-bottom: 1rem;
+    h2 {
+      color: #0056b3;
+      margin-bottom: 10px;
     }
 
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
+    p {
+      line-height: 1.6;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      background: #f1f1f1;
-      color: var(--gray);
-      font-size: 0.9rem;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
     }
 
-    .btn-contact {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.5rem;
-      background-color: var(--accent);
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
+    @media (max-width: 600px) {
+      header img {
+        max-width: 180px;
+      }
 
-    .lang-switch {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 0.9rem;
-    }
-
-    .lang-switch a {
-      margin-left: 10px;
-      color: var(--gray);
-      text-decoration: none;
-    }
-
-    .lang-switch a:hover {
-      text-decoration: underline;
+      section {
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    Lang : <a href="#">FR</a> | <a href="#">EN</a>
-  </div>
 
   <header>
-    <nav>
-      <div><strong>Optianox</strong></div>
-      <div>
-        <a href="#about">À propos</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+    <img src="optianox_logo.png" alt="Optianox logo">
+    <p>Experts en digitalisation des métiers financiers</p>
   </header>
 
-  <div class="hero">
-    <h1>Optianox</h1>
-    <p>Experts en digitalisation des métiers financiers</p>
-  </div>
-
-  <section id="about">
+  <section>
     <h2>À propos</h2>
-    <p>Nous aidons les institutions financières à optimiser leurs processus, automatiser leurs opérations, et renforcer leur résilience grâce à des solutions digitales sur mesure.</p>
+    <p>
+      Nous aidons les institutions financières à optimiser leurs processus, automatiser leurs opérations, et renforcer leur résilience grâce à des solutions digitales sur mesure.
+    </p>
   </section>
 
-  <section id="services">
+  <section>
     <h2>Nos services</h2>
     <ul>
-      <li>Automatisation des processus middle & back-office</li>
-      <li>Déploiement d'outils métiers (CRM, outils de risk, data management)</li>
-      <li>Conformité réglementaire (DORA, ESG, AML/KYC)</li>
-      <li>Digitalisation de la chaîne de valeur financière</li>
+      <li>Conseil en digitalisation et transformation opérationnelle</li>
+      <li>Automatisation des processus métiers (RPA, IA)</li>
+      <li>Conformité, sécurité, résilience et reporting</li>
+      <li>Accompagnement projets et change management</li>
     </ul>
   </section>
 
-  <section id="contact">
+  <section>
     <h2>Contact</h2>
-    <p>Pour toute demande, contactez-nous :</p>
-    <a class="btn-contact" href="mailto:contact@optianox.com">Envoyer un e-mail</a>
+    <p>📧 <a href="mailto:contact@optianox.com">contact@optianox.com</a></p>
   </section>
 
   <footer>
-    &copy; 2025 Optianox – Conseil en digitalisation pour la finance. Aucun cookie. Aucun tracking.
+    &copy; 2025 Optianox – Tous droits réservés.
   </footer>
+
 </body>
 </html>
